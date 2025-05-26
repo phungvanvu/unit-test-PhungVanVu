@@ -39,11 +39,18 @@ public class StudentAnalyzerTest {
         assertEquals(2, result);
     }
 
+
     @Test
     void testCountExcellentStudents_WithNullValues() {
         List<Double> scores = Arrays.asList(8.5, null, 9.0);
         int result = analyzer.countExcellentStudents(scores);
         assertEquals(2, result);
+    }
+
+    @Test
+    void testCountExcellentStudents_WithBoundaryValues() {
+        List<Double> scores = Arrays.asList(7.99, 8.0, 8.01, 10.0);
+        assertEquals(3, analyzer.countExcellentStudents(scores));
     }
 
     @Test

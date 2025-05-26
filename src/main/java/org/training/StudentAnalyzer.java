@@ -2,13 +2,17 @@ package org.training;
 
 import java.util.List;
 
+/**
+ * Class phân tích điểm số học sinh.
+ */
 public class StudentAnalyzer {
+
     /**
-     * Phân tích điểm số và trả về số lượng học sinh đạt loại Giỏi.
-     * @param scores danh sách điểm số từ 0 đến 10
-     * @return số học sinh đạt loại Giỏi (>= 8.0)
-     * - Bỏ qua điểm âm hoặc lớn hơn 10 (coi là dữ liệu sai)
-     * - Nếu danh sách
+     * Đếm số học sinh đạt loại Giỏi (điểm >= 8.0).
+     * Bỏ qua điểm không hợp lệ (âm hoặc > 10) và null.
+     * Nếu danh sách null hoặc rỗng trả về 0.
+     * @param scores danh sách điểm từ 0 đến 10
+     * @return số học sinh loại Giỏi
      */
     public int countExcellentStudents(List<Double> scores) {
         if (scores == null || scores.isEmpty()) return 0;
@@ -25,9 +29,10 @@ public class StudentAnalyzer {
     }
 
     /**
-     * Tính điểm trung bình hợp lệ (từ 0 đến 10)
+     * Tính điểm trung bình các điểm hợp lệ (0 đến 10), bỏ qua null và điểm sai.
+     * Nếu danh sách null, rỗng hoặc không có điểm hợp lệ, trả về 0.
      * @param scores danh sách điểm
-     * @return điểm trung bình của các điểm hợp lệ
+     * @return điểm trung bình hợp lệ
      */
     public double calculateValidAverage(List<Double> scores) {
         if (scores == null || scores.isEmpty()) return 0.0;
