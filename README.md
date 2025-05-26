@@ -28,10 +28,17 @@ Bài tập gồm lớp `StudentAnalyzer` với hai phương thức:
 - Test danh sách chứa giá trị biên (0 và 10).
 - Test trường hợp có điểm < 0 hoặc > 10.
 
+- <img src="D:\174234.png" alt="..." width="400" />
+
 ## Cấu trúc thư mục
 
 - `src/`: chứa mã nguồn Java
 - `test/`: chứa mã kiểm thử JUnit
+
+## cov
+
+![]()
+
 
 ## Hướng dẫn chạy
 
