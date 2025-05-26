@@ -28,7 +28,8 @@ Bài tập gồm lớp `StudentAnalyzer` với hai phương thức:
 - Test danh sách chứa giá trị biên (0 và 10).
 - Test trường hợp có điểm < 0 hoặc > 10.
 
-- <img src="D:\174234.png" alt="..." width="400" />
+## Độ phủ mã
+<img src="docs/174234.png" alt="Ảnh minh họa" width="400" />
 
 ## Cấu trúc thư mục
 
